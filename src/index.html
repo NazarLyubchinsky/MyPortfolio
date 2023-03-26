@@ -1,12 +1,169 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Title</title>
 </head>
+
 <body>
-    
+
+	<div class="page">
+		<header class="header">
+			<div class="header__left">
+				<nav class="nav">
+					<ul class="nav__list">
+						<li>
+							<a class="nav__link" href="#">Home</a>
+						</li>
+						<li>
+							<a class="nav__link" href="#">Glavnaya</a>
+						</li>
+						<li>
+							<a class="nav__link" href="#">Glavnaya</a>
+						</li>
+						<li>
+							<a class="nav__link" href="#">Glavnaya</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="header__right">
+				<nav class="nav">
+					<ul class="nav__list">
+						<li>
+							<a class="nav__link" href="#">profile</a>
+						</li>
+					</ul>
+				</nav>
+				<form class="search" action="/" method="post">
+					<input class="search__input" type="text" placeholder="Поиск по блогу">
+				</form>
+			</div>
+
+		</header>
+		<aside class="sidebar">
+			<div class="sidebar__header">
+				<img src="images/sidebar_header.jpeg" alt="">
+			</div>
+			<div class="sidebar__content">
+				<div class="profile">
+					<img class="profile__avatar" src="images/зображення_viber_2022-06-11_21-25-14-863.jpg" alt="">
+					<div class="profile__name">Nazar Lyubchinskyi</div>
+					<div class="profile__prof">front-end</div>
+					<ul class="social">
+						<li class="social__item">
+							<a class="social__link" href="#" target="_blank">
+								<img src="images/instagram.svg" alt="">
+							</a>
+						</li>
+						<li class="social__item">
+							<a class="social__link" href="#" target="_blank">
+								<img src="images/instagram.svg" alt="">
+							</a>
+						</li>
+						<li class="social__item">
+							<a class="social__link" href="#" target="_blank">
+								<img src="images/instagram.svg" alt="">
+							</a>
+						</li>
+					</ul>
+					<div class="profile__text">
+						<p class="profile__text-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+							provident praesentium iure sit amet consequatur officiis facilis, eius similique voluptas adipisci,
+							explicabo ipsam. Perferendis facilis voluptate natus quam voluptas ipsa.</p>
+					</div>
+				</div>
+			</div>
+			<div class="sidebar__footer">
+				<button data-modal="project_1" class="btn btn-red" href="./layout1.html">мои работы </button>
+				<a href="./layout1.html" class="btn btn-blue" type="button">resume</a>
+			</div>
+		</aside>
+		<main class="main">
+			<div class="container">
+				<div class="stories">
+					<div class="stories__item">
+						<img class="storise__preview" src="images/stories_main1.jpg" alt="">
+						<!-- <div class="stories__title">wwddwdw</div> -->
+						<time class="stories__date" datetime="2023.03.24">24.03.2023</time>
+					</div>
+					<div class="stories__item">
+						<img class="storise__preview" src="images/stories__main2.jpg" alt="">
+						<!-- <div class="stories__title">wwddwdw</div> -->
+						<time class="stories__date" datetime="2023.03.24">24.03.2023</time>
+					</div>
+					<div class="stories__item">
+						<img class="storise__preview" src="images/stories__main3.jpg" alt="">
+						<!-- <div class="stories__title">wwddwdw</div> -->
+						<time class="stories__date" datetime="2023.03.24">24.03.2023</time>
+					</div>
+					<div class="stories__item">
+						<img class="storise__preview" src="images/stories__main4.jpg" alt="">
+						<!-- <div class="stories__title">wwddwdw</div> -->
+						<time class="stories__date" datetime="2023.03.24">24.03.2023</time>
+					</div>
+				</div>
+			</div>
+
+			<section class="project">
+				<h2 class="project__title">project</h2>
+				<div class="portfolio">
+					<a href="./layout1.html" class="portfolio__col">
+						<div class="work">
+							<img class="work__image" src="images/stories__main3.jpg" alt="">
+							<div class="work__content">
+								<div class="work__cat">category</div>
+								<div class="work__title">project title
+									<time class="work__date" datetime="2023-03-25 11:04">2023</time>
+								</div>
+							</div>
+						</div>
+					</a>
+					<div class="portfolio__col">
+						<div class="work">
+							<img class="work__image" src="images/stories__main3.jpg" alt="">
+							<div class="work__content">
+								<div class="work__cat">category</div>
+								<div class="work__title">project title
+									<time class="work__date" datetime="2023-03-25 11:04">2023</time>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="portfolio__col">
+						<div class="work">
+							<img class="work__image" src="images/stories__main3.jpg" alt="">
+							<div class="work__content">
+								<div class="work__cat">category</div>
+								<div class="work__title">project title
+									<time class="work__date" datetime="2023-03-25 11:04">2023</time>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</main>
+
+		<!-- modals -->
+		<div class="modal" id="project_1">
+			<div class="modal__dialog">
+				<button class="modal__close" type="button">
+					<img class="modal__img" src="images/close.svg" alt="close">
+				</button>
+
+				dwd
+			</div>
+
+		</div>
+	</div>
+
+
 </body>
+
 </html>
