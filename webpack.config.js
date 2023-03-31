@@ -20,16 +20,31 @@ module.exports = ({ develop }) => ({
 	},
 	plugins: [
 		new HtmlWebpackPlugin({
-			filename:"index.html",
+			filename: "index.html",
 			template: './src/index.html'
 
 		}),
 		new HtmlWebpackPlugin({
-			filename:"layout1.html",
+			filename: "layout1.html",
 			template: './src/layout1.html'
 
 		}),
-	
+		new HtmlWebpackPlugin({
+			filename: "work1.html",
+			template: './src/work1.html'
+
+		}),
+		new HtmlWebpackPlugin({
+			filename: "work2.html",
+			template: './src/work2.html'
+
+		}),
+		new HtmlWebpackPlugin({
+			filename: "work3.html",
+			template: './src/work3.html'
+
+		}),
+
 		new MiniCssExtractPlugin({
 			filename: './styles/main.css'
 		})

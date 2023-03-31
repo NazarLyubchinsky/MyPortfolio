@@ -5,12 +5,12 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Title</title>
+	<title>Porfolio</title>
 </head>
 
 <body>
 
-	<div class="page">
+	<div class="page" id="page">
 		<header class="header">
 			<div class="header__left">
 				<nav class="nav">
@@ -29,6 +29,9 @@
 						</li>
 					</ul>
 				</nav>
+				<button class="burger active" type="button" id="sidebarToggle">
+					<span class="burger__span">otkrut navig</span>
+				</button>
 			</div>
 			<div class="header__right">
 				<nav class="nav">
@@ -44,7 +47,7 @@
 			</div>
 
 		</header>
-		<aside class="sidebar">
+		<aside class="sidebar" id="sidebar">
 			<div class="sidebar__header">
 				<img src="images/sidebar_header.jpeg" alt="">
 			</div>
@@ -53,20 +56,31 @@
 					<img class="profile__avatar" src="images/зображення_viber_2022-06-11_21-25-14-863.jpg" alt="">
 					<div class="profile__name">Nazar Lyubchinskyi</div>
 					<div class="profile__prof">front-end</div>
+					<nav class="nav nav--mobile">
+						<ul class="nav__list">
+							<li>
+								<a class="nav__link" href="./index.html">Home</a>
+							</li>
+							<li>
+								<a class="nav__link" href="#">Glavnaya</a>
+							</li>
+							<li>
+								<a class="nav__link" href="#">Glavnaya</a>
+							</li>
+							<li>
+								<a class="nav__link" href="#">Glavnaya</a>
+							</li>
+						</ul>
+					</nav>
 					<ul class="social">
 						<li class="social__item">
-							<a class="social__link" href="#" target="_blank">
-								<img src="images/instagram.svg" alt="">
+							<a class="social__link" href="https://www.instagram.com/_nazar.kotov_/" target="_blank">
+								<img class="" src="images/instagram.svg" alt="">
 							</a>
 						</li>
 						<li class="social__item">
-							<a class="social__link" href="#" target="_blank">
-								<img src="images/instagram.svg" alt="">
-							</a>
-						</li>
-						<li class="social__item">
-							<a class="social__link" href="#" target="_blank">
-								<img src="images/instagram.svg" alt="">
+							<a class="social__link" href="https://t.me/VBShadow" target="_blank">
+								<img src="images/telega-icon.png" alt="">
 							</a>
 						</li>
 					</ul>
@@ -78,8 +92,8 @@
 				</div>
 			</div>
 			<div class="sidebar__footer">
-				<a class="btn btn-red" href="#">мои работы</a>
-				<button class="btn btn-blue" type="button">Написать мне</button>
+				<button data-modal="project_1" class="btn btn-red" href="./layout1.html">мои работы </button>
+				<a href="./layout1.html" class="btn btn-blue" type="button">resume</a>
 			</div>
 		</aside>
 		<main class="main">
@@ -125,7 +139,7 @@
 				</aside>
 				<main>
 					<p class="main__contact-title"> Experience</p>
-					<p style="font-weight: 600;">Lorem, ipsum dolor.</p>
+					<p style="font-weight: 600; margin-top: 40px;">Lorem, ipsum dolor.</p>
 					<p>Lorem, ipsum dolor.</p>
 					<p>Lorem, ipsum dolor.</p>
 					<ul>
